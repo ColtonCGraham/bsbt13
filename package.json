@@ -51,10 +51,18 @@
   },
   "dependencies": {
     "@rollup/plugin-terser": "^0.4.3",
-    "@testing-library/jest-dom": "^5.16.5"
+    "@testing-library/jest-dom": "^5.16.5",
+    "husky": "^8.0.3"
   },
   "peerDependencies": {
     "react": "^18.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+    "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+    "post-applypatch": "echo \"[Husky] post-applypatch\"",
+    "pre-commit": "echo \"[Husky] pre-commit\""}
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
