@@ -1,5 +1,5 @@
 {
-  "name": "@ColtonCGraham/bsbt2",
+   "name": "@ColtonCGraham/bsbt2",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/ColtonCGraham"
   },
