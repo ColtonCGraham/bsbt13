@@ -11,16 +11,16 @@ export default meta;
 
 type Story = StoryObj<typeof Image>;
 
-export const Primary: Story = (args: React.JSX.IntrinsicAttributes & ImageProps) => (
-  <Image data-testId="Image-id" {...args} />
-);
+export const Primary: Story = (
+  args: React.JSX.IntrinsicAttributes & ImageProps,
+) => <Image data-testId="Image-id" {...args} />;
 Primary.args = {
   disabled: false,
 };
 
-export const Disabled: Story = (args: React.JSX.IntrinsicAttributes & ImageProps) => (
-  <Image data-testId="InputField-id" {...args} />
-);
+export const Disabled: Story = (
+  args: React.JSX.IntrinsicAttributes & ImageProps,
+) => <Image data-testId="InputField-id" {...args} />;
 Disabled.args = {
   disabled: true,
 };

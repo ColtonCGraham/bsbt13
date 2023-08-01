@@ -1,7 +1,6 @@
 import React from "react";
-import '@testing-library/jest-dom'
-import {render, screen } from '@testing-library/react'
-
+import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
 
 import Text from "./Text";
 
@@ -12,11 +11,8 @@ describe("Text", () => {
 });
 
 describe("Running for disabled text", () => {
-    it('should be disabled', () => {
-
-
-      render(<Text disabled/>)
-      expect(screen.getByTestId('t1')).toHaveAttribute('disabled');
+  it("should be disabled", () => {
+    render(<Text disabled />);
+    expect(screen.getByTestId("t1")).toHaveAttribute("disabled");
   });
 });
-

@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof Label> = (args) => <Label {...args} />;
 export const Enabled = Template.bind({});
 
 Enabled.args = {
-  text: "I am a label"
+  text: "I am a label",
 };
 
 const T2: ComponentStory<typeof Label> = (args) => <Label {...args} />;

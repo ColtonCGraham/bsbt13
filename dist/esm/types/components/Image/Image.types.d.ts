@@ -1,4 +1,4 @@
 export interface ImageProps {
-    disabled?: boolean;
-    size?: string;
+  disabled?: boolean;
+  size?: string;
 }

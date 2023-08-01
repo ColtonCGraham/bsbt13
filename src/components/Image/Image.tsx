@@ -11,22 +11,14 @@ const StyledImage = styled.div<ImageProps>`
   background-color: ${(props) => (props.disabled ? "grey" : "blue")};
   cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
   height: 325px;
-  width:  325px;
+  width: 325px;
   background-repeat: no-repeat;
   background-position: center;
 `;
 
-const Image: React.FC<ImageProps> = ({
-  disabled,
-  ...props
-}) => {
+const Image: React.FC<ImageProps> = ({ disabled, ...props }) => {
   return (
-
-    <StyledImage disabled={disabled} data-testid="ImageTest" >
-
-
-    </StyledImage>
-
+    <StyledImage disabled={disabled} data-testid="ImageTest"></StyledImage>
   );
 };
 

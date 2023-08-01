@@ -12,18 +12,18 @@ export default meta;
 
 type Story = StoryObj<typeof Input>;
 
-export const Primary: Story = (args: React.JSX.IntrinsicAttributes & InputProps) => (
-  <Input data-testId="InputField-id" {...args} />
-);
+export const Primary: Story = (
+  args: React.JSX.IntrinsicAttributes & InputProps,
+) => <Input data-testId="InputField-id" {...args} />;
 Primary.args = {
   error: false,
   disabled: false,
   label: "Primary",
 };
 
-export const Success: Story = (args: React.JSX.IntrinsicAttributes & InputProps) => (
-  <Input data-testId="InputField-id" {...args} />
-);
+export const Success: Story = (
+  args: React.JSX.IntrinsicAttributes & InputProps,
+) => <Input data-testId="InputField-id" {...args} />;
 Success.args = {
   error: false,
   success: true,
@@ -31,18 +31,18 @@ Success.args = {
   label: "Success",
 };
 
-export const Error: Story = (args: React.JSX.IntrinsicAttributes & InputProps) => (
-  <Input data-testId="InputField-id" {...args} />
-);
+export const Error: Story = (
+  args: React.JSX.IntrinsicAttributes & InputProps,
+) => <Input data-testId="InputField-id" {...args} />;
 Error.args = {
   error: true,
   disabled: false,
   message: "Error",
 };
 
-export const Disabled: Story = (args: React.JSX.IntrinsicAttributes & InputProps) => (
-  <Input data-testId="InputField-id" {...args} />
-);
+export const Disabled: Story = (
+  args: React.JSX.IntrinsicAttributes & InputProps,
+) => <Input data-testId="InputField-id" {...args} />;
 Disabled.args = {
   disabled: true,
   label: "Disabled",

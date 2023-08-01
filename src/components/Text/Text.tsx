@@ -8,18 +8,10 @@ const StyledText = styled.div<TextProps>`
   cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
 `;
 
-const Text: React.FC<TextProps> = ({
-  text,
-  disabled,
-  ...props
-}) => {
+const Text: React.FC<TextProps> = ({ text, disabled, ...props }) => {
   return (
-    <StyledText
-      disabled={disabled}
-      data-testid="t1"
-      {...props}>
+    <StyledText disabled={disabled} data-testid="t1" {...props}>
       {text}
-
     </StyledText>
   );
 };

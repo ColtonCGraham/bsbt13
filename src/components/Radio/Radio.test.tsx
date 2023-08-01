@@ -1,7 +1,6 @@
 import React from "react";
-import '@testing-library/jest-dom'
-import {render, screen } from '@testing-library/react'
-
+import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
 
 import Radio from "./Radio";
 
@@ -12,11 +11,8 @@ describe("Radio", () => {
 });
 
 describe("Running for disabled Radio", () => {
-    it('should be disabled', () => {
-
-
-      render(<Radio disabled/>)
-      expect(screen.getByTestId('t1')).toHaveAttribute('disabled');
+  it("should be disabled", () => {
+    render(<Radio disabled />);
+    expect(screen.getByTestId("t1")).toHaveAttribute("disabled");
   });
 });
-

@@ -12,18 +12,18 @@ export default meta;
 
 type Story = StoryObj<typeof Hero>;
 
-export const Primary: Story = (args: React.JSX.IntrinsicAttributes & HeroProps) => (
-  <Hero data-testId="Hero-id" {...args} />
-);
+export const Primary: Story = (
+  args: React.JSX.IntrinsicAttributes & HeroProps,
+) => <Hero data-testId="Hero-id" {...args} />;
 Primary.args = {
   disabled: false,
-  label: "Enabled"
+  label: "Enabled",
 };
 
-export const Disabled: Story = (args: React.JSX.IntrinsicAttributes & HeroProps) => (
-  <Hero data-testId="HeroField-id" {...args} />
-);
+export const Disabled: Story = (
+  args: React.JSX.IntrinsicAttributes & HeroProps,
+) => <Hero data-testId="HeroField-id" {...args} />;
 Disabled.args = {
   disabled: true,
-  label: "disabled"
+  label: "disabled",
 };

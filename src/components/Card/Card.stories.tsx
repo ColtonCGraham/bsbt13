@@ -12,20 +12,20 @@ export default meta;
 
 type Story = StoryObj<typeof Card>;
 
-export const Primary: Story = (args: React.JSX.IntrinsicAttributes & CardProps) => (
-  <Card data-testId="Card-id" {...args} />
-);
+export const Primary: Story = (
+  args: React.JSX.IntrinsicAttributes & CardProps,
+) => <Card data-testId="Card-id" {...args} />;
 Primary.args = {
   disabled: false,
   label: "Sally",
-  name: "Horrible"
+  name: "Horrible",
 };
 
-export const Disabled: Story = (args: React.JSX.IntrinsicAttributes & CardProps) => (
-  <Card data-testId="InputField-id" {...args} />
-);
+export const Disabled: Story = (
+  args: React.JSX.IntrinsicAttributes & CardProps,
+) => <Card data-testId="InputField-id" {...args} />;
 Disabled.args = {
   disabled: true,
   label: "John",
-  name: "Assignment..."
+  name: "Assignment...",
 };

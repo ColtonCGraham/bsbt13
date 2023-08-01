@@ -1,7 +1,6 @@
 import React from "react";
-import '@testing-library/jest-dom'
-import {render, screen } from '@testing-library/react'
-
+import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
 
 import Label from "./Label";
 
@@ -12,11 +11,8 @@ describe("Label", () => {
 });
 
 describe("Running for disabled Label", () => {
-    it('should be disabled', () => {
-
-
-      render(<Label disabled/>)
-      expect(screen.getByTestId('t1')).toHaveAttribute('disabled');
+  it("should be disabled", () => {
+    render(<Label disabled />);
+    expect(screen.getByTestId("t1")).toHaveAttribute("disabled");
   });
 });
-

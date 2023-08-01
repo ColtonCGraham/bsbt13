@@ -65,7 +65,8 @@ const Input: FC<InputProps> = ({
         error={error}
         success={success}
         placeholder={placeholder}
-        {...props}></StyledInput>
+        {...props}
+      ></StyledInput>
       <StyledMessage>
         <StyledText error={error}>{message}</StyledText>
       </StyledMessage>

@@ -1,5 +1,5 @@
 export interface TableProps {
-    dataText?: string;
-    disabled?: boolean;
-    headerText?: string;
+  dataText?: string;
+  disabled?: boolean;
+  headerText?: string;
 }

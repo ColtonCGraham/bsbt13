@@ -23,7 +23,7 @@ const StyledButton = styled.button<ButtonProps>`
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
   &:hover {
-    background-color: ${(props) => (props.disabled ? "": "#6bedb5")};
+    background-color: ${(props) => (props.disabled ? "" : "#6bedb5")};
   }
   &:active {
     border: solid 2px #1b116e;
@@ -51,7 +51,8 @@ const Button: React.FC<ButtonProps> = ({
       primary={primary}
       disabled={disabled}
       size={size}
-      {...props}>
+      {...props}
+    >
       {text}
     </StyledButton>
   );

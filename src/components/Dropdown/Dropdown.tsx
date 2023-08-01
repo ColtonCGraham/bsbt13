@@ -1,4 +1,4 @@
-import React, {FC, Component } from "react";
+import React, { FC, Component } from "react";
 import styled from "styled-components";
 import { DropdownProps } from "./Dropdown.types";
 
@@ -8,7 +8,7 @@ const StyledUl = styled.ul<DropdownProps>`
   overflow: hidden;
   background-color: ${(props) => (props.disabled ? "#777" : "#333")};
   cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
-  padding:0px;
+  padding: 0px;
 `;
 
 const StyledLi = styled.li`
@@ -53,29 +53,20 @@ const SubA = styled.a`
   }
 `;
 
-
-const Dropdown: FC<DropdownProps> = ({
-  disabled,
-  headerText,
-  ...props
-}) => {
+const Dropdown: FC<DropdownProps> = ({ disabled, headerText, ...props }) => {
   return (
-
     <StyledUl disabled={disabled} data-testid="d1" {...props}>
-    <DropDownLi disabled={disabled}  data-testid="d2">
-      <Dropbtn  {...props}>
-        {headerText}
-      </Dropbtn>
-      <DropDownContent>
-        {" "}
-        <SubA>1</SubA>
-        <SubA>2</SubA>
-        <SubA>3</SubA>
-      </DropDownContent>
-    </DropDownLi>
-  </StyledUl>
+      <DropDownLi disabled={disabled} data-testid="d2">
+        <Dropbtn {...props}>{headerText}</Dropbtn>
+        <DropDownContent>
+          {" "}
+          <SubA>1</SubA>
+          <SubA>2</SubA>
+          <SubA>3</SubA>
+        </DropDownContent>
+      </DropDownLi>
+    </StyledUl>
   );
 };
 
 export default Dropdown;
-

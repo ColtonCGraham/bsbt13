@@ -23,8 +23,8 @@ const StyledHeader = styled.th<TableProps>`
 `;
 
 const StyledData = styled.td<TableProps>`
-border: 1px solid;
-color: ${(props) => (props.disabled ? "#e4e3ea" : "#30cfa9")};
+  border: 1px solid;
+  color: ${(props) => (props.disabled ? "#e4e3ea" : "#30cfa9")};
 `;
 
 const Table: FC<TableProps> = ({
@@ -34,45 +34,30 @@ const Table: FC<TableProps> = ({
   ...props
 }) => {
   return (
-
     <StyledTable disabled={disabled} data-testid="t1">
       <tbody>
-      <StyledRow>
-        <StyledHeader disabled={disabled}
-      {...props}>
-      {headerText}
-
-        </StyledHeader>
-        <StyledHeader disabled={disabled}
-      {...props}>
-      {headerText}
-
-        </StyledHeader>
-        <StyledHeader disabled={disabled}
-      {...props}>
-      {headerText}
-
-        </StyledHeader>
-      </StyledRow>
-      <StyledRow>
-        <StyledData disabled={disabled}
-      {...props}>
-      {dataText}
-
-        </StyledData>
-        <StyledData disabled={disabled}
-      {...props}>
-      {dataText}
-
-        </StyledData>
-        <StyledData disabled={disabled}
-      {...props}>
-      {dataText}
-
-        </StyledData>
-
-
-      </StyledRow>
+        <StyledRow>
+          <StyledHeader disabled={disabled} {...props}>
+            {headerText}
+          </StyledHeader>
+          <StyledHeader disabled={disabled} {...props}>
+            {headerText}
+          </StyledHeader>
+          <StyledHeader disabled={disabled} {...props}>
+            {headerText}
+          </StyledHeader>
+        </StyledRow>
+        <StyledRow>
+          <StyledData disabled={disabled} {...props}>
+            {dataText}
+          </StyledData>
+          <StyledData disabled={disabled} {...props}>
+            {dataText}
+          </StyledData>
+          <StyledData disabled={disabled} {...props}>
+            {dataText}
+          </StyledData>
+        </StyledRow>
       </tbody>
     </StyledTable>
   );

@@ -13,16 +13,9 @@ const StyledLabel = styled.div<LabelProps>`
   width: 160px;
 `;
 
-const Label: React.FC<LabelProps> = ({
-  text,
-  disabled,
-  ...props
-}) => {
+const Label: React.FC<LabelProps> = ({ text, disabled, ...props }) => {
   return (
-    <StyledLabel
-      disabled={disabled}
-      data-testid="t1"
-      {...props}>
+    <StyledLabel disabled={disabled} data-testid="t1" {...props}>
       {text}
     </StyledLabel>
   );

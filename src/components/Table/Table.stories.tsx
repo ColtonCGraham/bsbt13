@@ -12,18 +12,18 @@ export default meta;
 
 type Story = StoryObj<typeof Table>;
 
-export const Primary: Story = (args: React.JSX.IntrinsicAttributes & TableProps) => (
-  <Table data-testId="Table-id" {...args} />
-);
+export const Primary: Story = (
+  args: React.JSX.IntrinsicAttributes & TableProps,
+) => <Table data-testId="Table-id" {...args} />;
 Primary.args = {
   disabled: false,
   headerText: "Header",
   dataText: "Data",
 };
 
-export const Disabled: Story = (args: React.JSX.IntrinsicAttributes & TableProps) => (
-  <Table data-testId="InputField-id" {...args} />
-);
+export const Disabled: Story = (
+  args: React.JSX.IntrinsicAttributes & TableProps,
+) => <Table data-testId="InputField-id" {...args} />;
 Disabled.args = {
   disabled: true,
   headerText: "Disabled Header",

@@ -1,7 +1,6 @@
 import React from "react";
-import '@testing-library/jest-dom'
-import {render, screen } from '@testing-library/react'
-
+import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
 
 import Dropdown from "./Dropdown";
 
@@ -12,11 +11,8 @@ describe("Dropdown", () => {
 });
 
 describe("Running for disabled Dropdown", () => {
-    it('should be disabled', () => {
-
-
-      render(<Dropdown disabled/>)
-      expect(screen.getByTestId('d1')).toHaveAttribute('disabled');
+  it("should be disabled", () => {
+    render(<Dropdown disabled />);
+    expect(screen.getByTestId("d1")).toHaveAttribute("disabled");
   });
 });
-

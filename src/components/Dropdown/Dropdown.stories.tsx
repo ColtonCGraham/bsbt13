@@ -12,19 +12,18 @@ export default meta;
 
 type Story = StoryObj<typeof Dropdown>;
 
-export const Primary: Story = (args: React.JSX.IntrinsicAttributes & DropdownProps) => (
-  <Dropdown data-testId="Drop-id" {...args} />
-);
+export const Primary: Story = (
+  args: React.JSX.IntrinsicAttributes & DropdownProps,
+) => <Dropdown data-testId="Drop-id" {...args} />;
 Primary.args = {
   disabled: false,
   headerText: "Dropdown",
 };
 
-export const Disabled: Story = (args: React.JSX.IntrinsicAttributes & DropdownProps) => (
-  <Dropdown data-testId="Drop-id2" {...args} />
-);
+export const Disabled: Story = (
+  args: React.JSX.IntrinsicAttributes & DropdownProps,
+) => <Dropdown data-testId="Drop-id2" {...args} />;
 Disabled.args = {
   disabled: true,
   headerText: "Disabled Dropdown",
-
 };
